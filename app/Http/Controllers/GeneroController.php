@@ -1,9 +1,10 @@
 <?php
 
 namespace Cinema\Http\Controllers;
-
+use Cinema\Genero;
+Use Session;
 use Illuminate\Http\Request;
-
+use Redirect;
 class GeneroController extends Controller
 {
     /**
@@ -13,7 +14,8 @@ class GeneroController extends Controller
      */
     public function index()
     {
-        //
+        $genero = Genero::All();
+        return view('genero.index',['generos'=>$genero]);
     }
 
     /**
@@ -34,7 +36,12 @@ class GeneroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $genero = new Genero;
+        $genero->descripcion = $request->descripcion;
+        $genero->estadosistema = 't';
+        $genero->save();
+        Session::flash('mensaje','Usuario Ingresado Correctamente!');
+        return redirect('/genero');
     }
 
     /**
@@ -56,7 +63,8 @@ class GeneroController extends Controller
      */
     public function edit($id)
     {
-        //
+        $genero = Genero::find($id);
+        return view('genero.edit',['generos'=>$genero]);
     }
 
     /**
@@ -68,7 +76,11 @@ class GeneroController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $genero = Genero::find($id);
+        $genero->descripcion = $request->descripcion;
+        $genero->save();
+        Session::flash('mensaje','Usuario Modificado Correctamente!');
+        return redirect('/genero');
     }
 
     /**
