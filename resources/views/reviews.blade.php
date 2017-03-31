@@ -3,7 +3,7 @@
 				<div class="review-content">
 			<div class="top-header span_top">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+					<a href="index.html"><img src="principal/images/logo.png" alt="" /></a>
 					<p>Movie Theater</p>
 				</div>
 				<div class="search v-search">
@@ -19,7 +19,7 @@
 					<div class="col-md-9 reviews-grids">
 						<div class="review">
 							<div class="movie-pic">
-								<a href="single.html"><img src="images/r4.jpg" alt="" /></a>
+								<a href="single.html"><img src="principal/images/r4.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
 								<a class="span" href="single.html">Lorem  <i>Movie Review</i></a>
@@ -35,7 +35,7 @@
 
 						<div class="review">
 							<div class="movie-pic">
-								<a href="single.html"><img src="images/r1.jpg" alt="" /></a>
+								<a href="single.html"><img src="principal/images/r1.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
 								<a class="span" href="single.html">Lorem  <i>Movie Review</i></a>
@@ -56,12 +56,12 @@
 			</div>
 		<div class="review-slider">
 			 <ul id="flexiselDemo1">
-				<li><img src="images/r1.jpg" alt=""/></li>
-				<li><img src="images/r2.jpg" alt=""/></li>
-				<li><img src="images/r3.jpg" alt=""/></li>
-				<li><img src="images/r4.jpg" alt=""/></li>
-				<li><img src="images/r5.jpg" alt=""/></li>
-				<li><img src="images/r6.jpg" alt=""/></li>
+				<li><img src="principal/images/r1.jpg" alt=""/></li>
+				<li><img src="principal/images/r2.jpg" alt=""/></li>
+				<li><img src="principal/images/r3.jpg" alt=""/></li>
+				<li><img src="principal/images/r4.jpg" alt=""/></li>
+				<li><img src="principal/images/r5.jpg" alt=""/></li>
+				<li><img src="principal/images/r6.jpg" alt=""/></li>
 			</ul>	
 		</div>	
 	@endsection

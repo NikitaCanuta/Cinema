@@ -2,12 +2,10 @@
 <html>
 <head>
 <title>Cinema A Entertainment Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
-<link href="principal/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- Custom Theme files -->
-<link href="principal/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- Custom Theme files -->
-<script src="principal/js/jquery.min.js"></script>
-<!-- Custom Theme files -->
+{!! Html::style('principal/css/bootstrap.css') !!}
+{!! Html::style('principal/css/style.css') !!}
+{!! Html::style('principal/css/popuo-box.css') !!}
+{!! Html::script('principal/js/jquery.min.js') !!}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Cinema Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -69,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 			});
 		</script>
-		<script type="text/javascript" src="principal/js/jquery.flexisel.js"></script>
+		{!! Html::script('principal/js/jquery.flexisel.js') !!}
 	<div class="clearfix"></div>
 </body>
 </html>
